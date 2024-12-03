@@ -99,11 +99,6 @@ h2.separator{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    
-}
-
-.nft-list{
-    flex-wrap: wrap;
 }
 
 .sell-nft .item,
@@ -308,7 +303,8 @@ footer .right{
     gap: 26px;
 }
 
-footer .right .links{
+footer .right .social i{
+    color: #fff;
     display: flex;
     gap: 30px;
 }
@@ -328,14 +324,13 @@ footer .right .social{
     gap: 10px;
 }
 
-footer .right .social a i{
-    color: #fff;
+footer .right .social i{
     font-size: 30px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-footer .right .social a i:hover{
+footer .right .social i:hover{
     color: #304ffe;
 }
 
@@ -541,6 +536,23 @@ footer .right p{
 
 @media screen and (max-width: 576px) {
     
+    nav{
+        display: flex; /* Certifique-se de usar flexbox */
+        flex-direction: column; /* Altere para coluna */
+        align-items: center; /* Opcional: centralizar os itens */
+        margin-bottom: 40px;
+    }
+
+    nav a.logo img {
+        padding-top: 10px;
+    }
+
+    .nft-list {
+        display: flex; /* Certifique-se de usar flexbox */
+        flex-direction: column; /* Altere para coluna */
+        align-items: center; /* Opcional: centralizar os itens */
+    }
+
     header .left h1{
         font-size: 30px;
     }
@@ -551,7 +563,7 @@ footer .right p{
 
     .nft-shop .nft-list .item,
     .sellers .item{
-        width: 47%;
+        width: 80%;
     }
 
     .nft-shop .category a{
